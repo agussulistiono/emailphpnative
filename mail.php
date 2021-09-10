@@ -8,12 +8,12 @@ $mail->isSMTP();
 $mail->Host = 'smtp.gmail.com';
 $mail->SMTPAuth = true;
 //ganti dengan email dan password yang akan di gunakan sebagai email pengirim
-$mail->Username = 'pshtbersama@gmail.com';
-$mail->Password = '@pshtbersama01';
+$mail->Username = 'isikan email pengirim';
+$mail->Password = 'isikan password';
 $mail->SMTPSecure = 'tls';
 $mail->Port = 587;
 //ganti dengan email yg akan di gunakan sebagai email pengirim
-$mail->setFrom('pshtbersama@gmail.com', 'admin');
+$mail->setFrom('isikan email pengirim', 'admin');
 $mail->addAddress($_POST['Email'], $_POST['Nama']);
 $mail->isHTML(true);
 $mail->Subject = "Aktivasi pendaftaran Member";
